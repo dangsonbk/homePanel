@@ -1,0 +1,81 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+html{
+  background-color: black;
+}
+.body-wrap {
+  height: 600px;
+  width: 1024px;
+  overflow: auto;
+  background-color: white;
+}
+ion-icon {
+  font-size: 25px;
+}
+
+nav {
+  /* height: 56px; */
+  line-height: 56px;
+}
+nav i {
+  height: auto;
+}
+
+.no-margin-top-bottom {
+  margin: 0 1.68rem 0;
+}
+
+.no-padding{
+  padding:0px;
+}
+
+.container {
+  width: 100%;
+}
+.row {
+  margin-bottom:0px;
+}
+.section {
+  padding-top:0px;
+  padding-bottom: 0px;
+}
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+.notification-badge {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  right: 10px;
+  color: #ffffff;
+  background-color: #00bcd4;
+  margin: 0 -.8em;
+  border-radius: 50%;
+  padding: 3px 4px 0px;
+}
+
+.page-footer {
+  height: 80px;
+  padding-top:10px;
+}
+
+.presence {
+  width:60px;
+}
+
+.carousel {
+  height: 250px !important;
+}
+
+.carousel-item {
+  min-height: auto !important;
+}
