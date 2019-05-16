@@ -18,6 +18,23 @@ ion-icon {
   font-size: 25px;
 }
 
+.myGauge {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.gauge-box {
+  position: relative;
+}
+
+.gauge-label {
+  position: absolute;
+  bottom: 15px;
+  left: 0%;
+  width: 100%;
+  text-align: center;
+}
+
 nav {
   /* height: 56px; */
   line-height: 56px;
@@ -32,6 +49,15 @@ nav i {
 
 .no-padding{
   padding:0px;
+}
+
+.dashboard-collection {
+  height: 175px;
+  overflow: auto;
+}
+
+.dashboard-details {
+  font-size: 13px;
 }
 
 .container {
@@ -73,9 +99,17 @@ nav i {
 }
 
 .carousel {
-  height: 250px !important;
+  height: 200px !important;
 }
 
 .carousel-item {
   min-height: auto !important;
+}
+
+.carousel-fixed-item.with-indicators {
+  bottom: 30px !important;
+}
+
+.carousel .indicators .indicator-item {
+  margin: 5px 4px;
 }

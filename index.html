@@ -60,83 +60,104 @@
                 <i class="material-icons">home</i>
                 <span class="right">Humidity: 60%</span>
               </div>
-              <div class="col l4" style="font-size:13px">
-                <div>
+              <div class="col l4">
+                <div class="dashboard-details">
                   <span class="left">Living room</span>
                   <span class="right">22℃ 60%</span>
                 </div>
-                <div>
+                <div class="dashboard-details">
                   <span class="left">Pri. bedroom</span>
                   <span class="right">22℃ 60%</span>
                 </div>
-                <div>
+                <div class="dashboard-details">
                   <span class="left">Sec. bedroom</span>
                   <span class="right">22℃ 60%</span>
                 </div>
-                <div>
+                <div class="dashboard-details">
                   <span class="left">Cooking room</span>
                   <span class="right">22℃ 60%</span>
                 </div>
                 <div>
-                  <span class="center">Update 10 minutes ago</span>
+                  <span class="dashboard-details">Update 10 minutes ago</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="col l6 no-padding">
             <div class="carousel carousel-slider center">
-                <div class="carousel-fixed-item center">
-                  <a class="btn waves-effect">Activate</a>
-                </div>
-                <div class="carousel-item red white-text" href="#one!">
-                  <h2>Good morning</h2>
-                  <p class="white-text">Morning scene</p>
-                </div>
-                <div class="carousel-item amber white-text" href="#two!">
-                  <h2>No body home</h2>
-                  <p class="white-text">Will apply 5 minutes after activated</p>
-                </div>
-                <div class="carousel-item green white-text" href="#three!">
-                  <h2>We have guests</h2>
-                  <p class="white-text">This is your third panel</p>
-                </div>
-                <div class="carousel-item blue white-text" href="#four!">
-                  <h2>Romantic</h2>
-                  <p class="white-text">This is your fourth panel</p>
-                </div>
-                <div class="carousel-item blue white-text" href="#four!">
-                  <h2>Dinner time</h2>
-                  <img src="https://lorempixel.com/800/400/food/1">
-                </div>
+              <div class="carousel-fixed-item center">
+                <a class="btn waves-effect">Activate</a>
               </div>
+              <div class="carousel-item red white-text" href="#one!">
+                <h5>Good morning</h5>
+                <p class="white-text">Morning scene</p>
+              </div>
+              <div class="carousel-item amber white-text" href="#two!">
+                <h5>No body home</h5>
+                <p class="white-text">Will apply 5 minutes after activated</p>
+              </div>
+              <div class="carousel-item green white-text" href="#three!">
+                <h5>We have guests</h5>
+                <p class="white-text">This is your third panel</p>
+              </div>
+              <div class="carousel-item blue white-text" href="#four!">
+                <h5>Romantic</h5>
+                <p class="white-text">This is your fourth panel</p>
+              </div>
+              <div class="carousel-item blue white-text" href="#four!" style="background-image: url('https://lorempixel.com/800/400/food/1')">
+                <h5>Dinner time</h5>
+              </div>
+            </div>
+            <div class="col l12 teal white-text" style="height:50px;">
+                <p>
+                  <i class="material-icons red-text left">warning</i>This is an example quotation that uses the blockquote tag.
+                </p>
+            </div>
           </div>
         </div>
       </div>
       <div class="section teal lighten-5">
         <div class="row">
-            <div class="col l6">
-              <canvas id="myChart" height="125px"></canvas>
-            </div>
-            <div class="col l6">
-              <div class="row">
-                <div class="col l4">
-                  <ul class="collection">
-                    <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">toggle_on</i></a></div></li>
-                    <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">toggle_on</i></a></div></li>
-                    <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">toggle_off</i></a></div></li>
-                    <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">toggle_on</i></a></div></li>
-                  </ul>
-                </div>
-                <div class="col l4">
-                    <ul class="collection">
-                      <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">toggle_on</i></a></div></li>
-                      <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">toggle_on</i></a></div></li>
-                      <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">toggle_on</i></a></div></li>
-                      <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">toggle_on</i></a></div></li>
-                    </ul>
-                  </div>
+          <div class="col l6">
+            <div class="row">
+              <div class="col l6 no-padding">
+                  <blockquote style="margin: 5px 10px;">Power consumption</blockquote>
+                <canvas id="myChart"></canvas>
+              </div>
+              <div class="col l6 no-padding">
+                <canvas id="myDonut"></canvas>
               </div>
             </div>
+            <div class="row" style="padding-bottom: 15px;">
+              <div class="col l12">
+                <a class="waves-effect waves-light btn btn-small"><i class="material-icons right">info</i>Report</a>
+                <a class="waves-effect waves-light btn btn-small"><i class="material-icons right">cloud</i>analyze</a>
+                <a class='dropdown-trigger btn btn-small' href='#' data-target='dropdown1'><i class="material-icons right">offline_bolt</i>Energy Mode</a>
+              </div>
+            </div>
+          </div>
+          <div class="col l6">
+            <div class="col l8 no-padding">
+              <ul class="collection dashboard-collection">
+                <li class="collection-item"><div>Living room front lights<a href="#!" class="secondary-content"><i class="material-icons">toggle_on</i></a></div></li>
+                <li class="collection-item"><div>Living room back lights<a href="#!" class="secondary-content"><i class="material-icons">toggle_on</i></a></div></li>
+                <li class="collection-item"><div>Sofa lamp<a href="#!" class="secondary-content"><i class="material-icons">toggle_on</i></a></div></li>
+                <li class="collection-item"><div>Guest<a href="#!" class="secondary-content"><i class="material-icons">toggle_off</i></a></div></li>
+                <li class="collection-item"><div>Guest<a href="#!" class="secondary-content"><i class="material-icons">toggle_off</i></a></div></li>
+                <li class="collection-item"><div>Guest<a href="#!" class="secondary-content"><i class="material-icons">toggle_off</i></a></div></li>
+              </ul>
+            </div>
+            <div class="col l4 no-padding">
+              <div class=" gauge-box">
+                <canvas id="myGaugeCPU" class="myGauge"></canvas>
+                <b class="gauge-label" id="myGaugeCPU-text"></b>
+              </div>
+              <div class=" gauge-box">
+                <canvas id="myGaugeDisc" class="myGauge"></canvas>
+                <b class="gauge-label" id="myGaugeDisc-text"></b>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -174,17 +195,29 @@
       </div>
     </footer>
   </div>
-
+  <!-- Energy Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#!">High Efficient</a></li>
+    <li><a href="#!">Efficient</a></li>
+    <li><a href="#!"><i class="material-icons right">check</i>Default</a></li>
+    <li><a href="#!">Manual</a></li>
+    <li class="divider" tabindex="-1"></li>
+    <li><a href="#!"><i class="material-icons">info</i>Details</a></li>
+    <li><a href="#!"><i class="material-icons">view_module</i>Setting</a></li>
+  </ul>
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+  <script src="https://bernii.github.io/gauge.js/dist/gauge.min.js"></script>
   <script>
     $('.carousel.carousel-slider').carousel({
       fullWidth: true,
       indicators: true
     });
+    $('.dropdown-trigger').dropdown();
+        
   </script>
 
   <script>
@@ -201,9 +234,9 @@
                 borderWidth: 1,
             }, {
               label: 'Yesterday',
-                data: [15, 17, 7, 8, 1, 4, 6, 7, 30, 10, 100, 70, 40, 30, 50, 60, 60, 30, 20, 15, 17],
-                backgroundColor: ["rgba(0, 255, 0, 255)"],
-                borderColor: ["rgba(0, 255, 0, 255)"],
+                data: [15, 17, 7, 8, 1, 4, 6, 7, 30, 10, 100, 70, 40, 30, 50, 60, 60, 30, 20, 15, 17, 10, 10, 11, 11],
+                backgroundColor: ["rgba(0, 255, 0, 1)"],
+                borderColor: ["rgba(0, 255, 0, 1)"],
                 borderWidth: 1,
             }]
         },
@@ -220,9 +253,108 @@
                 fontSize: 10
               }
             },
-            responsive: true
+            responsive: true,
         },
     });
+
+    // Donut
+
+    var randomScalingFactor = function() {
+      return Math.round(Math.random() * 100);
+    };
+
+    var config = {
+      type: 'doughnut',
+      data: {
+        datasets: [{
+          data: [
+            randomScalingFactor(),
+            randomScalingFactor(),
+            randomScalingFactor(),
+            randomScalingFactor(),
+            randomScalingFactor(),
+          ],
+          backgroundColor: [
+            "rgba(100, 70, 30, 1)",
+            "rgba(0, 10, 100, 1)",
+            "rgba(0, 50, 200, 1)",
+            "rgba(70, 255, 0, 1)",
+            "rgba(36, 25, 80, 1)",
+          ],
+        }],
+        labels: [
+          'Living room',
+          'Pri. bedroom',
+          'Sec. bedroom',
+          'Bath room',
+          'Others',
+        ]
+      },
+      options: {
+        responsive: true,
+        animation: {
+          animateScale: true,
+          animateRotate: true
+        },
+        legend: {
+          position: 'left',
+          labels: {
+            fontSize: 12,
+            boxWidth: 20,
+          }
+        }
+      },
+    };
+
+    window.onload = function() {
+      var ctx = document.getElementById('myDonut').getContext('2d');
+      window.myDoughnut = new Chart(ctx, config);
+    };
+
+    // Gauge
+
+    var opts = {
+      angle: 0, // The span of the gauge arc
+      lineWidth: 0.25, // The line thickness
+      radiusScale: 0.8, // Relative radius
+      pointer: {
+        length: 0.6, // // Relative to gauge radius
+        strokeWidth: 0.035, // The thickness
+        color: 'rgba(30, 50, 70, 0.8)' // Fill color
+      },
+      staticLabels: {
+        font: "10px sans-serif",  // Specifies font
+        labels: [0, 25, 50, 75, 100],  // Print labels at these values
+        color: "#000000",  // Optional: Label text color
+        fractionDigits: 0  // Optional: Numerical precision. 0=round off.
+      },
+      staticZones: [
+        {strokeStyle: "#ffffff", min: 0, max: 20},
+        {strokeStyle: "#00e676", min: 20, max: 75},
+        {strokeStyle: "#ffff00", min: 75, max: 90},
+        {strokeStyle: "#dd2c00", min: 90, max: 100},
+      ],
+      limitMax: false,     // If false, max value increases automatically if value > maxValue
+      limitMin: false,     // If true, the min value of the gauge will be fixed
+      generateGradient: true,
+      highDpiSupport: true,     // High resolution support
+      
+    };
+    var targetCPUGauge = document.getElementById('myGaugeCPU'); // your canvas element
+    var gaugeCPU = new Gauge(targetCPUGauge).setOptions(opts); // create sexy gauge!
+    gaugeCPU.maxValue = 100; // set max gauge value
+    gaugeCPU.minValue = 0;  // Prefer setter over gauge.minValue = 0
+    gaugeCPU.animationSpeed = 32; // set animation speed (32 is default value)
+    gaugeCPU.set(70);
+    gaugeCPU.setTextField(document.getElementById("myGaugeCPU-text"));
+
+    var target = document.getElementById('myGaugeDisc'); // your canvas element
+    var gauge = new Gauge(target).setOptions(opts); // create sexy gauge!
+    gauge.maxValue = 100; // set max gauge value
+    gauge.minValue = 0;  // Prefer setter over gauge.minValue = 0
+    gauge.animationSpeed = 32; // set animation speed (32 is default value)
+    gauge.set(50);
+    gauge.setTextField(document.getElementById("myGaugeDisc-text"));
   </script>
 
   </body>
