@@ -24,7 +24,7 @@
           <li><a href="#"><i class="fas fa-cog"></i></a></li>
           <li><a href="#"><i class="fas fa-server"></i></a></li>
         </ul>
-        <span class="brand-logo center">21:30:45</span>
+        <span id="clock" class="brand-logo center">21:30:45</span>
         <ul class="right">
           <li><a href="#"><i class="material-icons">access_time</i></a></li>
           <li><a href="#"><i class="material-icons">devices_other</i></a></li>
@@ -32,6 +32,7 @@
           <li><a href="#"><i class="fas fa-chart-line"></i></a></li>
           <li><a href="#"><i class="material-icons">event_note</i></a></li>
           <li><a href="#"><i class="material-icons">people</i></a></li>
+          <li><a href="#"><i class="material-icons">history</i></a></li>
           <li><a href="#"><i class="material-icons">notifications</i></a></li>
         </ul>
       </div>
@@ -48,7 +49,17 @@
       <div class="section teal accent-3">
         <div class="row">
           <div class="col l6 white-text">
-            <blockquote>Temperature inside and outside now</blockquote>
+            <div class="row">
+              <div class="col l9" style="height:50px;">
+                <p>
+                  <i class="material-icons white-text left">cloud</i>Temperature inside and outside now
+                </p>
+              </div>
+              <div class="col l3" style="height:50px;padding-top:10px;">
+                <a class="waves-effect waves-light btn-floating btn-small"><i class="material-icons right">settings</i></a>
+                <a class="waves-effect waves-light btn-floating btn-small"><i class="material-icons right">timeline</i></a>
+              </div>
+            </div>
             <div class="row">
               <div class="col l4">
                 <h1 class="no-margin-top-bottom">30℃</h1>
@@ -108,10 +119,13 @@
                 <h5>Dinner time</h5>
               </div>
             </div>
-            <div class="col l12 teal white-text" style="height:50px;">
+            <div class="col l11 teal white-text" style="height:50px;">
                 <p>
                   <i class="material-icons red-text left">warning</i>This is an example quotation that uses the blockquote tag.
                 </p>
+            </div>
+            <div class="col l1 teal white-text" style="height:50px;padding-top:10px;">
+              <a class="waves-effect waves-light btn-floating btn-small right"><i class="material-icons right">done</i></a>
             </div>
           </div>
         </div>
@@ -124,14 +138,14 @@
                   <blockquote style="margin: 5px 10px;">Power consumption</blockquote>
                 <canvas id="myChart"></canvas>
               </div>
-              <div class="col l6 no-padding">
+              <div class="col l6" style="padding: 10px 0 0px">
                 <canvas id="myDonut"></canvas>
               </div>
             </div>
             <div class="row" style="padding-bottom: 15px;">
               <div class="col l12">
                 <a class="waves-effect waves-light btn btn-small"><i class="material-icons right">info</i>Report</a>
-                <a class="waves-effect waves-light btn btn-small"><i class="material-icons right">cloud</i>analyze</a>
+                <a class="waves-effect waves-light btn btn-small"><i class="material-icons right">cloud</i>Analyze</a>
                 <a class='dropdown-trigger btn btn-small' href='#' data-target='dropdown1'><i class="material-icons right">offline_bolt</i>Energy Mode</a>
               </div>
             </div>
@@ -190,6 +204,9 @@
           </div>
           <div class="col l1 right">
             <a class="btn-floating btn-large waves-effect waves-light red"><i class="fas fa-biohazard"></i></a>
+          </div>
+          <div class="col l1 right">
+            <a class="btn-floating btn-large waves-effect waves-light red"><i class="fas fa-wifi"></i></a>
           </div>
         </div>
       </div>
@@ -357,5 +374,28 @@
     gauge.setTextField(document.getElementById("myGaugeDisc-text"));
   </script>
 
+  <script>
+  function checkTime(i) {
+    if (i < 10) {
+      i = "0" + i;
+    }
+    return i;
+  }
+
+  function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    // add a zero in front of numbers<10
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('clock').innerHTML = h + ":" + m + ":" + s;
+    t = setTimeout(function() {
+      startTime()
+    }, 500);
+  }
+  startTime();
+  </script>
   </body>
 </html>
